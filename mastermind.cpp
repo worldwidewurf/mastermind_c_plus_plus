@@ -50,7 +50,7 @@ string getInput(){
         cout << "Enter a 4 digit code: ";
         cin >> guess;
         if (!regex_match(guess,regex("[1-8]{4}"))){
-            cout<< "Enter exactly 4 digits"<<"\n";
+            cout<< "Enter exactly 4 digits of numbers 1-8"<<"\n";
             }
         else{
             goOn = false;
@@ -66,7 +66,7 @@ void printResults(vector<int> results){
 int main(){
     string code = generateCode();
     cout << "A super secret 4 digit code has been generated you have 10 tries to try and guess it, goodluck.\n";
-    cout << code<<"\n";
+    // cout << code<<"\n";
     int turns = 10;
     while (turns>0){
         turns --;
