@@ -81,6 +81,7 @@ int main(){
         else{
             
             if (turns == 0){
+                cout <<"Ran out of chances.\n"
                 cout << "The Code was "<< code<<"\n";
             }
             else{
