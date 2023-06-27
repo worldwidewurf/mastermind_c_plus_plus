@@ -49,6 +49,7 @@ string getInput(){
     while (goOn){
         cout << "Enter a 4 digit code: ";
         cin >> guess;
+        
         if (!regex_match(guess,regex("[1-8]{4}"))){
             cout<< "Enter exactly 4 digits of numbers 1-8"<<"\n";
             }
